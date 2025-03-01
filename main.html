@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+     
+    // message 1
+    let name = "Daniela"
+    let age = 21
+    let hobbies = ["sleeping","watching anime"]
+    let message1 = `I'm ${name}, ${age} years of age, and I like ${hobbies[0]} and ${hobbies[1]}.`
+    
+    console.log(message1)
+
+    //message 2
+    let person = {
+        name,
+        //name:name,
+        age,
+        //age:age,
+        hobbies,
+        //hobbies:hobbies,
+        education:{
+            elementary:"Manga Central Elementary School",
+            highschool:"Manga High School Extension",
+            college:"Cor Jesu College INC."
+        },
+    }
+    let message2 = `I'm ${person.name}, ${person.age} years of age, and i like ${person.hobbies[1]} and ${person.hobbies[0]}. I completed my elementary education at ${person.education.elementary}.`
+
+    console.log(message2)
+
+    //message 3
+    let person1 = {
+        name:"Bea",
+        age: 21,
+        personality:["humble","friendly"],
+    }
+    let person2 = {
+        name: "Give",
+        age: 23,
+        personality:["kind","adventurous"],
+    }
+    let message3 = `I'm ${name} and I have two friends named ${person1.name} and ${person2.name}. ${person1.name} is ${person1.personality[0]} and ${person1.personality[1]}, while ${person2.name} is ${person2.personality[1]} and ${person2.personality[0]}.`
+
+    console.log(message3)
+
+
+// Activity 1
+function logSum(num1,num2){
+    console.log('logSum', num1 + num2)
+ }
+logSum(1,2)
+
+// Activity 2
+let hobbies = ["drawing","eating","sleeping","watching anime","reading manhwa"]
+for (let i = 0; i < hobbies.length; i++){
+    console.log(`I like ${hobbies[i]}`)
+}
+
+
+</script>
